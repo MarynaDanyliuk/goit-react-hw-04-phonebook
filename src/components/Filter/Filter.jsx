@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
 export const Filter = ({ filter, handleFilter }) => {
@@ -19,7 +19,7 @@ export const Filter = ({ filter, handleFilter }) => {
   );
 };
 
-// Filter.propTypes = {
-//   filter: PropTypes.string,
-//   handleFilter: PropTypes.func.isRequired,
-// };
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  handleFilter: PropTypes.func.isRequired,
+};
